@@ -22,7 +22,7 @@ Usage of httpfile.exe:
         enable https.
 ```
 
-## example
+## Native deployment
 
 ### normal mode
 
@@ -33,4 +33,27 @@ httpfile.exe -p :8080 -d ./data
 ### tls mode
 ```
 httpfile.exe -tls -p :8080 -d ./data
+```
+
+## Docker deployment
+
+### normal mode
+
+```
+docker run -d -p 8080:8080 -v /opt/data:/data --restart=always linimbus/httpfile
+```
+
+### tls mode
+
+```
+docker run -d -p 8080:8080 -v /opt/data:/data --restart=always linimbus/httpfile -tls
+```
+
+## Browse wiew
+
+such as
+```
+http://192.168.0.111:8080/
+or
+https://192.168.0.111:8080/
 ```
