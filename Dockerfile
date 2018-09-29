@@ -1,5 +1,5 @@
-FROM golang:1.8.1
-MAINTAINER linimbus@126.com
+FROM golang:latest
+MAINTAINER lixiangyun linimbus@126.com
 
 WORKDIR /gopath/
 ENV GOPATH=/gopath/
@@ -14,7 +14,7 @@ FROM alpine:latest
 RUN apk --no-cache add ca-certificates
 
 WORKDIR /opt/
-COPY --from=0 /gopath/src/github.com/lixiangyun/httpfile ./httpfile
+COPY --from=0 /gopath/src/github.com/lixiangyun/httpfile/httpfile ./httpfile
 
 RUN chmod +x *
 
