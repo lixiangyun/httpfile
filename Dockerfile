@@ -23,7 +23,4 @@ COPY ./server.key .
 
 EXPOSE 8080
 
-# docker build -t httpfile .
-# docker run -d -p 8080:8080 -v "./data:/data" --restart=always httpfile
-
 ENTRYPOINT ["./httpfile", "-p", ":8080", "-d", "/data"]
