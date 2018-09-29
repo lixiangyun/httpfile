@@ -27,12 +27,12 @@ Usage of httpfile.exe:
 ### normal mode
 
 ```
-httpfile.exe -p :8080 -d ./data
+./httpfile -p :8080 -d ./data
 ```
 
 ### tls mode
 ```
-httpfile.exe -tls -p :8080 -d ./data
+./httpfile -tls -p :8080 -d ./data
 ```
 
 ## Docker deployment
