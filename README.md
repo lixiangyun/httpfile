@@ -1,5 +1,7 @@
-# httpfile
+# httpfile 
 - A http file server tool
+
+## ![](https://travis-ci.com/lixiangyun/httpfile.svg?branch=master)
 
 ## build
 ```
